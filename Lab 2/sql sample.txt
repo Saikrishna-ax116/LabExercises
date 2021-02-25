@@ -1,0 +1,11 @@
+create table employee_tbl(emp_id int, name text, salary real, age int, address char(30),primary key(emp_id));
+insert into employee_tbl values(101,'raj',50000.0,28,'chennai');
+insert into employee_tbl values(102,'sam',60000.0,24,'hyderabad');
+insert into employee_tbl values(103,'karan',55000.0,26,'bangalore');
+Create table department_tbl( dept_no int constraint dept_pk primary key,dept_name text NOT NULL,Location varchar(15));
+insert into department_tbl values(10,'IT','chennai');
+insert into department_tbl values(20,'Sales','bangalore');
+insert into department_tbl values(30,'finance','delhi');
+select * from employee_tbl where address='chennai';
+update employee_tbl set salary=65000 where emp_id=103;
+delete from employee_tbl where emp_id=104;
